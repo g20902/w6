@@ -19,7 +19,7 @@
     function initMap() {
       var myOptions = {
         zoom: 8,
-        center: {lat: 35.70211210025202, lng: 139.58045257022607},//興味をもった地点をふくむ地図を表示する
+        center: {lat: 35.702778, lng: 139.579722},//興味をもった地点をふくむ地図を表示する
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -33,7 +33,7 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 35.70211210025202, lng: 139.58045257022607},//興味をもった地点にマーカーを表示する
+        position: {lat: 35.702778, lng: 139.579722},//興味をもった地点にマーカーを表示する
         icon: iconBase + 'flag_maps.png',
         map: map
       });
