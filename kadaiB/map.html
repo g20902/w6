@@ -19,7 +19,7 @@
     function initMap() {
       var myOptions = {
         zoom: 8,
-        center: {lat: 53.480759, lng: -2.242631},//興味をもった地点をふくむ地図を表示する
+        center: {lat: 139.58045257022607, lng: 35.70211210025202},//興味をもった地点をふくむ地図を表示する
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -33,14 +33,20 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 53.480759, lng: -2.242631},//興味をもった地点にマーカーを表示する
+        position: {lat: 139.58045257022607, lng: 35.70211210025202},//興味をもった地点にマーカーを表示する
         icon: iconBase + 'flag_maps.png',
         map: map
       });
 
       // Step 3. Add info window
       //マーカーをクリックすると、その地点に関する説明、興味をもった理由を情報ウィンドウInfoWindowに表示する
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString =
+      '<div id="content">
+      　<h2 id="firstHeading" class="firstHeading">Custom info window</h2>
+      　<p>吉祥寺駅</p><br>
+        <p>説明：JR東日本の中央本線と京王電鉄の井の頭線が乗り入れる接続駅。</p>
+        <p>興味をもった理由：最寄駅のため選びました</p>
+      </div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
